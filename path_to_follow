@@ -1,0 +1,5 @@
+Create the gazebo model
+
+Build ros-gazebo dependencies from https://classic.gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros
+
+Add ros_control plugin https://classic.gazebosim.org/tutorials?tut=ros_control
