@@ -1,0 +1,2 @@
+roboy_models
+-DCATKIN_DEVEL_PREFIX=/home/a3g34n/MND_icebreaking_project/tricycle_ws/devel -DCMAKE_INSTALL_PREFIX=/home/a3g34n/MND_icebreaking_project/tricycle_ws/install -G Unix Makefiles
