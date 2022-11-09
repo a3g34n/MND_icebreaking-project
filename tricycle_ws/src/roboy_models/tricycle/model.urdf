@@ -134,16 +134,6 @@
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" velocity="10.0"/>
   </joint>
-  <transmission name="left_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <actuator name="$left_wheel_motor">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-    <joint name="left_wheel_hinge">
-      <hardwareInterface>hardware_interface/VelocityJointInterface
-      </hardwareInterface>
-    </joint>
-  </transmission>
   <gazebo reference="left_wheel">
     <mu1 value="200.0"/>
     <mu2 value="100.0"/>
@@ -178,16 +168,7 @@
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" velocity="10.0"/>
   </joint>
-  <transmission name="right_wheel_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <actuator name="$right_wheel_motor">
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-    <joint name="right_wheel_hinge">
-      <hardwareInterface>hardware_interface/VelocityJointInterface
-      </hardwareInterface>
-    </joint>
-  </transmission>
+  
   <gazebo reference="right_wheel">
     <mu1 value="200.0"/>
     <mu2 value="100.0"/>

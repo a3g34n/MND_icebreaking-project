@@ -36,10 +36,12 @@ class TricycleControlGazebo:
             steering_pub.publish(phi)
             wheel_p = 2.0 * WHEEL_RADIUS * pi
             wheel_rot_vel = vx / wheel_p
-            lin_vel = Float64MultiArray(data=[wheel_rot_vel, wheel_rot_vel,
-                                              wheel_rot_vel])
+            
+            # EA  lin_vel = Float64MultiArray(data=[wheel_rot_vel, wheel_rot_vel, wheel_rot_vel]) 
+            
+            lin_vel = Float64MultiArray(data=[wheel_rot_vel]) # EA changed with the above
 
-            wheels_pub.publish(lin_vel)
+            wheels_pub.publish(lin_vel) # EA    wheels_pub.publish(lin_vel)
 
         rospy.Subscriber('cmd_vel', Twist, handle_velocity, queue_size=1)
         rospy.spin()
