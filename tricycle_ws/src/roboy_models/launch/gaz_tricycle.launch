@@ -34,4 +34,7 @@ run all controllers required to control the tricycle over /cmd_vel topic.
   simulation -->
   <node name="tricycle_controller" pkg="roboy_models"
         type="tricycle_controller.py"/>
+   <!-- Start a node that will forward odometry data -->
+  <node name="odom_pub" pkg="roboy_models"
+        type="odometry.py"/>
 </launch>
