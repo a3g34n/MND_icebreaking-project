@@ -60,7 +60,8 @@ def fix_yaw(des_pos):
 
     twist_msg = Twist()
     if math.fabs(err_yaw) > yaw_precision_:
-        twist_msg.angular.z = 0.7 if err_yaw > 0 else -0.7
+        # twist_msg.angular.z = 0.7 if err_yaw > 0 else -0.7
+        twist_msg.angular.z = err_yaw
         twist_msg.linear.x = 0.2
         print('Steer angle: [%s]' %steer_angle_)
     pub.publish(twist_msg)
