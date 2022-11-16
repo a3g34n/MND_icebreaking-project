@@ -31,7 +31,7 @@ w_d = 0.2 # distance between rear wheels
 
 x = 0.0 # initial x position
 y = 0.0 # initial y position
-
+# bu bir comment
 current_time = rospy.Time.now()
 last_time = rospy.Time.now()
 
