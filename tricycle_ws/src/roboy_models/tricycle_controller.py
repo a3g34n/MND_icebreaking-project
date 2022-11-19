@@ -34,8 +34,7 @@ class TricycleControlGazebo:
             phi = twist.angular.z
             rospy.logdebug('Command(vel=%.2f, steering=%.2f) received', vx, phi)
             steering_pub.publish(phi)
-            wheel_p = 2.0 * WHEEL_RADIUS * pi
-            wheel_rot_vel = vx / wheel_p
+            wheel_rot_vel = vx / WHEEL_RADIUS # wheel angular velocity calculated from linear velocity
             
             # EA  lin_vel = Float64MultiArray(data=[wheel_rot_vel, wheel_rot_vel, wheel_rot_vel]) 
             
