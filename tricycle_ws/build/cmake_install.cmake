@@ -131,7 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/gtest/cmake_install.cmake")
-  include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/roboy_models/cmake_install.cmake")
+  include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_control/cmake_install.cmake")
+  include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_description/cmake_install.cmake")
+  include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_gazebo/cmake_install.cmake")
+  include("/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_navigation/cmake_install.cmake")
 
 endif()
 

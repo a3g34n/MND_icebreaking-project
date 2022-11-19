@@ -467,6 +467,30 @@ rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
+//Value Computed by CMake
+tricycle_control_BINARY_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_control
+
+//Value Computed by CMake
+tricycle_control_SOURCE_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/src/tricycle_control
+
+//Value Computed by CMake
+tricycle_description_BINARY_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_description
+
+//Value Computed by CMake
+tricycle_description_SOURCE_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/src/tricycle_description
+
+//Value Computed by CMake
+tricycle_gazebo_BINARY_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_gazebo
+
+//Value Computed by CMake
+tricycle_gazebo_SOURCE_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/src/tricycle_gazebo
+
+//Value Computed by CMake
+tricycle_navigation_BINARY_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/build/tricycle_navigation
+
+//Value Computed by CMake
+tricycle_navigation_SOURCE_DIR:STATIC=/home/a3g34n/MND_icebreaking_project/tricycle_ws/src/tricycle_navigation
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
@@ -618,7 +642,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

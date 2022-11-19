@@ -1,0 +1,10 @@
+<launch>
+  
+    <node name="keypub" pkg="tricycle_control"
+          type="key_publisher.py" output="screen">
+    </node>
+    <node name="teleop" pkg="tricycle_control" 
+          type="keys_to_twist_with_ramps.py"    output="screen">
+    </node>
+  </launch>
+  

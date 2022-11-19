@@ -1,0 +1,8 @@
+prefix=/home/a3g34n/MND_icebreaking_project/tricycle_ws/install
+
+Name: tricycle_description
+Description: Description of tricycle_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

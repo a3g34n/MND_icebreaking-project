@@ -1,0 +1,8 @@
+prefix=/home/a3g34n/MND_icebreaking_project/tricycle_ws/install
+
+Name: tricycle_gazebo
+Description: Description of tricycle_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

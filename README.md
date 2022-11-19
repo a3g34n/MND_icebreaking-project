@@ -5,3 +5,17 @@ Given the tricycle mobile robot configuration The front wheel is used for both s
   - calculating global path which is passing through the way-points
   
   - simulating path tracking of the robot and plot the linear and angular velocities (v, w) of the robot
+
+## How to launch model:
+
+### To start gazebo with tricycle robot use:
+
+'''
+roslaunch tricycle_gazebo tricycle_empty_world.launch
+'''
+
+### To start teleoperation with keyboard
+
+'''
+roslaunch tricycle_control teleop.launch
+'''

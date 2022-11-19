@@ -5,4 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("roboy_models")
+subdirs("tricycle_control")
+subdirs("tricycle_description")
+subdirs("tricycle_gazebo")
+subdirs("tricycle_navigation")

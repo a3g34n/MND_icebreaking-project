@@ -1,2 +1,2 @@
-roboy_models
+tricycle_control:tricycle_description:tricycle_gazebo:tricycle_navigation
 -DCATKIN_DEVEL_PREFIX=/home/a3g34n/MND_icebreaking_project/tricycle_ws/devel -DCMAKE_INSTALL_PREFIX=/home/a3g34n/MND_icebreaking_project/tricycle_ws/install -G Unix Makefiles
