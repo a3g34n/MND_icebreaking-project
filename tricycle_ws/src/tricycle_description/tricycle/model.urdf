@@ -61,7 +61,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
     <joint name="steering_joint">
-      <hardwareInterface>hardware_interface/VelocityJointInterface
+      <hardwareInterface>hardware_interface/PositionJointInterface
       </hardwareInterface>
     </joint>
   </transmission>

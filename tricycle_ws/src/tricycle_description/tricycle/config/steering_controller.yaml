@@ -1,2 +1,2 @@
-type: "velocity_controllers/JointVelocityController"
+type: "position_controllers/JointPositionController"
 joint: steering_joint
