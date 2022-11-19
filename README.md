@@ -10,12 +10,12 @@ Given the tricycle mobile robot configuration The front wheel is used for both s
 
 ### To start gazebo with tricycle robot use:
 
-'''
+```
 roslaunch tricycle_gazebo tricycle_empty_world.launch
-'''
+```
 
 ### To start teleoperation with keyboard
 
-'''
+```
 roslaunch tricycle_control teleop.launch
-'''
+```
