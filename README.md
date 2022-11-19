@@ -14,8 +14,15 @@ Given the tricycle mobile robot configuration The front wheel is used for both s
 roslaunch tricycle_gazebo tricycle_empty_world.launch
 ```
 
-### To start teleoperation with keyboard
+### To start teleoperation with keyboard:
 
 ```
 roslaunch tricycle_control teleop.launch
 ```
+
+### To start autonomous movement to waypoints:
+
+```
+rosrun tricycle_navigation go_to_point.py
+```
+
