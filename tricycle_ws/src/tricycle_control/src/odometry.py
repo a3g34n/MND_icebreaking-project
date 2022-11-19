@@ -20,7 +20,7 @@ def clbk_joint_state(msg):
     steer_angle_ = msg.position[1]
     wheel_speed_ = msg.velocity[0]
 
-odom_pub = rospy.Publisher("odom", Odometry, queue_size=50)
+odom_pub = rospy.Publisher("/odom", Odometry, queue_size=50)
 sub_joint_state = rospy.Subscriber('/joint_states', JointState, clbk_joint_state)
 
 odom_broadcaster = tf.TransformBroadcaster()

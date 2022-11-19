@@ -56,19 +56,19 @@ def change_state(state):
 def fix_yaw(des_pos):
     global yaw_,pub, yaw_precision_, state_
     desired_yaw = math.atan2(des_pos.y - position_.y, des_pos.x - position_.x)
-    err_yaw = desired_yaw -yaw_
+    err_yaw = desired_yaw - yaw_
 
     twist_msg = Twist()
     if math.fabs(err_yaw) > yaw_precision_:
-        # twist_msg.angular.z = 0.7 if err_yaw > 0 else -0.7
+        #twist_msg.angular.z = 0.7 if err_yaw > 0 else -0.7
         twist_msg.angular.z = err_yaw
-        twist_msg.linear.x = 0.2
+        twist_msg.linear.x = 0.1
         print('Steer angle: [%s]' %steer_angle_)
     pub.publish(twist_msg)
 
     # state change conditions
     if math.fabs(err_yaw) <= yaw_precision_:
-        twist_msg.linear.x = 0
+        """
         pub.publish(twist_msg)
         print('Yaw error: [%s]' % err_yaw)
         while(steer_angle_ > 0.01 or steer_angle_ < -0.01):
@@ -78,6 +78,7 @@ def fix_yaw(des_pos):
                 twist_msg.angular.z = -0.7
             pub.publish(twist_msg)
             print('Steering neutralizing :D')
+        """
         change_state(1)
         
         
@@ -90,7 +91,7 @@ def go_straight_ahead(des_pos):
 
     if err_pos >dist_precision_:
         twist_msg = Twist()
-        twist_msg.linear.x = 0.6
+        twist_msg.linear.x = 0.1
         pub.publish(twist_msg)
 
     else:
