@@ -21,7 +21,7 @@ class TricycleControlGazebo:
     def start(self):
         rospy.init_node('tricycle_control_gazebo', log_level=rospy.DEBUG)
         wheels_pub = rospy.Publisher(
-            '/tricycle_wheels_controller/command', Float64MultiArray,
+            '/tricycle_wheels_controller/command', Float64,
             queue_size=10)
         steering_pub = rospy.Publisher(
             '/tricycle_steering_controller/command', Float64,
@@ -38,7 +38,7 @@ class TricycleControlGazebo:
             
             # EA  lin_vel = Float64MultiArray(data=[wheel_rot_vel, wheel_rot_vel, wheel_rot_vel]) 
             
-            lin_vel = Float64MultiArray(data=[wheel_rot_vel]) # EA changed with the above
+            lin_vel = Float64(data=wheel_rot_vel) # EA changed with the above
 
             wheels_pub.publish(lin_vel) # EA    wheels_pub.publish(lin_vel)
 

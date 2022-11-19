@@ -1,3 +1,2 @@
-type: "velocity_controllers/JointGroupVelocityController"
-joints:
- - front_wheel_hinge
+type: "velocity_controllers/JointVelocityController"
+joint: front_wheel_hinge
