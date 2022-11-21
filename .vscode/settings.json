@@ -1,4 +1,4 @@
 {
     "cmake.configureOnOpen": false,
-    "cmake.sourceDirectory": "${workspaceFolder}/tricycle_ws/src/roboy_models"
+    "cmake.sourceDirectory": "${workspaceFolder}/tricycle_ws/src/tricycle_control"
 }
