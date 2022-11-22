@@ -35,6 +35,6 @@ run all controllers required to control the tricycle over /cmd_vel topic.
   <node name="tricycle_controller" pkg="tricycle_control"
         type="tricycle_controller.py"/>
    <!-- Start a node that will forward odometry data -->
-  <node name="odom_pub" pkg="tricycle_control"
-        type="odometry_withoutKinematic.py"/>
+  <node name="odometry_publisher" pkg="tricycle_control"
+        type="odometry.py"/>
 </launch>

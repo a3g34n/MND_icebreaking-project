@@ -68,17 +68,6 @@ def fix_yaw(des_pos):
 
     # state change conditions
     if math.fabs(err_yaw) <= yaw_precision_:
-        """
-        pub.publish(twist_msg)
-        print('Yaw error: [%s]' % err_yaw)
-        while(steer_angle_ > 0.01 or steer_angle_ < -0.01):
-            if steer_angle_ < 0:
-                twist_msg.angular.z = 0.7
-            elif steer_angle_ > 0:
-                twist_msg.angular.z = -0.7
-            pub.publish(twist_msg)
-            print('Steering neutralizing :D')
-        """
         change_state(1)
         
         
@@ -117,7 +106,7 @@ def main():
     
     pub = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
 
-    sub_odom = rospy.Subscriber('/my_odom', Odometry, clbk_odom)
+    sub_odom = rospy.Subscriber('/odom', Odometry, clbk_odom)
 
     sub_joint_state = rospy.Subscriber('/joint_states', JointState, clbk_joint_state)
 

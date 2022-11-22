@@ -26,7 +26,7 @@ sub_joint_state = rospy.Subscriber('/joint_states', JointState, clbk_joint_state
 odom_broadcaster = tf.TransformBroadcaster()
 
 r_ = 0.1 # wheel radius
-d = 0.2 # distance between front wheel center and rear wheels centers
+d = 0.3 # distance between front wheel center and rear wheels centers
 w_d = 0.2 # distance between rear wheels
 
 x = 0.0 # initial x position
@@ -41,7 +41,7 @@ while not rospy.is_shutdown():
     
     v_traction = wheel_speed_ * r_ # linear speed of the traction
 
-    th = math.degrees(steer_angle_) # steering angle in degrees
+    th = steer_angle_ # steering angle in degrees
 
     vx = cos(th) * v_traction # translational velocity in x
     vy = 0 # translational velocity in y
@@ -57,10 +57,10 @@ while not rospy.is_shutdown():
     delta_y = V_yg * dt
     y += delta_y
     delta_th = vth * dt # yaw change in the moment
-    delta_th = math.degrees(delta_th)
+    delta_th = delta_th
 
     yaw += delta_th
-    print('yaw: [%s]', yaw)
+    print('yaw: [%s]'% math.degrees(yaw))
 
     # since all odometry is 6DOF we'll need a quaternion created from yaw
     odom_quat = tf.transformations.quaternion_from_euler(0, 0, yaw)

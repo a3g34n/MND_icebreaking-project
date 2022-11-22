@@ -29,6 +29,6 @@ rosrun tricycle_navigation go_to_point.py
 ## How to get this project up and running
 
   - [x] Steering joint controller must be replaced from Velocity_controller to Position_controller
-  - [ ] Calculations in odometry.py should be fixed
+  - [x] Calculations in odometry.py should be fixed
   - [ ] Multiple waypoints should be chosen and the global path must be calculated in a script
   - [ ] A script must be written for the robot to follow the path
