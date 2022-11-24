@@ -22,7 +22,7 @@ desired_position_.y = 8
 desired_position_.z = 0
 #parameters
 yaw_precision_ = math.pi / 90 # +/- 2 degree allowed
-dist_precision_ = 0.3
+dist_precision_ = 0.7
 
 #publishers
 pub = None
